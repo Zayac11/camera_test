@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
-import QrReader from 'react-qr-scanner'
-
+import QrReader from 'react-qr-reader'
 
 const Scanner = () => {
 
@@ -22,11 +21,10 @@ const Scanner = () => {
     return (
         <div>
             <QrReader
-                // delay={1000}
-                facingMode={'environment'}
-                style={previewStyle}
+                delay={300}
                 onError={handleError}
                 onScan={handleScan}
+                facingMode={'environment'}
             />
             <p>Бла бла</p>
             <p>{result}</p>
