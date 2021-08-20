@@ -6,13 +6,13 @@ const Scanner = () => {
     const [result, setResult] = useState('')
 
     const previewStyle = {
-        height: 240,
+        height: 320,
         width: 320,
     }
 
     const handleScan = (data) => {
 
-        setResult(data?.text)
+        setResult(data)
     }
     const handleError = (err) => {
         console.error(err)
@@ -25,6 +25,7 @@ const Scanner = () => {
                 onError={handleError}
                 onScan={handleScan}
                 facingMode={'environment'}
+                style = {previewStyle}
             />
             <p>Бла бла</p>
             <p>{result}</p>
