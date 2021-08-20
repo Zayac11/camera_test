@@ -23,7 +23,7 @@ const Scanner = () => {
         <div>
             <QrReader
                 // delay={1000}
-                facingMode={'rear'}
+                facingMode={'environment'}
                 style={previewStyle}
                 onError={handleError}
                 onScan={handleScan}

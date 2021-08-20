@@ -11,7 +11,7 @@ const Container = () => {
             <Route exact path={'/photo'} render={() => <Photo />} />
 
             <div className={s.footer}>
-                <NavLink className={s.link} activeClassName={s.active} to={'/scanner'}>Сканер QR</NavLink>
+                <NavLink className={s.link} activeClassName={s.active} exact to={'/'}>Сканер QR</NavLink>
                 <NavLink className={s.link} activeClassName={s.active} to={'/photo'}>Фото</NavLink>
             </div>
 
