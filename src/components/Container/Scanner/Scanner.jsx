@@ -28,6 +28,7 @@ const Scanner = () => {
                 onError={handleError}
                 onScan={handleScan}
             />
+            <p>Бла бла</p>
             <p>{result}</p>
         </div>
     )
